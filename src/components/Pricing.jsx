@@ -55,7 +55,7 @@ const Pricing = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: pkg.delay, duration: 0.5 }}
-              className={`relative p-8 rounded-[2rem] border transition-all duration-300 group
+              className={`relative p-8 rounded-[2rem] border transition-all duration-300 group flex flex-col h-full
                 ${pkg.highlight 
                   ? 'bg-glass-dark/60 border-neon-blue/30 shadow-[0_0_50px_rgba(79,70,229,0.2)] md:scale-110 z-10' 
                   : 'bg-glass-dark/30 border-glass-border hover:border-glass-border/80'
@@ -79,7 +79,7 @@ const Pricing = () => {
               </div>
 
               {/* Özellik Listesi */}
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-4 mb-8 flex-grow">
                 {pkg.features.map((feature, i) => (
                   <li key={i} className="flex items-start gap-3 text-sm text-crystal-light/80">
                     <Check size={18} className={pkg.highlight ? 'text-neon-blue' : 'text-crystal-light/40'} />
