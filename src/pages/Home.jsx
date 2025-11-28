@@ -1,14 +1,16 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import Services from '../components/Services'; // Yeni ekledik
+import Services from '../components/Services';
+import Pricing from '../components/Pricing'; // Yeni ekledik
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <Services /> {/* Bento Grid Hizmetler */}
+      <Services />
+      <Pricing /> {/* Fiyatlandırma Bölümü */}
       
-      {/* Geçici Footer Yeri (Boşluk kalsın diye) */}
+      {/* Geçici Footer (Hala yer tutucu) */}
       <div className="h-20" />
     </>
   );
